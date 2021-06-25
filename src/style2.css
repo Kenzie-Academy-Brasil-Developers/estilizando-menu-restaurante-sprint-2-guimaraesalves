@@ -1,27 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
 
 /* Use the 'Oswald' font family at 14px throughout the body of the document. */
+/* Use a família de fontes 'Oswald' em 14px em todo o corpo do documento. */
+body {
+    font-family: 'Oswald'; font-size: 14px;
+}
+
+
 nav {font-family: sans-serif; font-size: 10px;}
 
 #main {width: 900px; margin: 10px auto;}
 /* Use the 'Bungee Inline' font at 46px and lighter weight for the restaurant name. */
+/* Use a fonte 'Bungee Inline' em 46px e mais leve para o nome do restaurante. */
+
+
+h1 {
+    font-family: 'Bungee Inline'; font-size: 46px; 
+    font-weight: lighter;
+}
 
 
 #menu {columns: 420px 2; column-gap: 60px;}
 section {margin-bottom: 20px; padding: 10px;}
 
 /* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
-h2 {margin-top: 0;}
+/* Mostra cada um dos cabeçalhos de seção do menu (por exemplo, "Starters") em maiúsculas. */
+h2 {margin-top: 0; text-transform: uppercase;}
 
 /* Make the name of each menu item appear in bold in a 16px size. */
-dt {display: inline;}
+/* Faça com que o nome de cada item do menu apareça em negrito em um tamanho de 16px. */
+dt {display: inline; font-weight: bold;
+}
+
 /* Make a comma appear after the name of each menu item (before the description) */
+/* Fazer uma vírgula aparecer após o nome de cada item do menu (antes da descrição) */
+
+dt::after {
+    content: ",";
+}
 
 dd {display: inline; margin: 0;}
 dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
 
 .price {float: right; padding: 0 0 35px 20px;}
 
+
+
 /* Right-align the text of the address/footer */
+/* Alinhar à direita o texto do endereço / rodapé */
+address {
+    text-align: right;
+}
+
 
 /* draw a 2px thick black border around the starters and desserts sections of the menu */
+/* desenhar uma borda preta espessa de 2 px ao redor das seções de entradas e sobremesas do menu */
+#starters {
+    border: 2px solid black;
+}
+
+#desserts {
+    border: 2px solid black;
+}
+
